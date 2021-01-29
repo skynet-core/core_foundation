@@ -6,6 +6,9 @@
 # To run these tests, simply execute `nimble test`.
 
 import unittest
+import core_foundation/[base,cfstring]
 
 test "can add":
-  check (5 + 5) == 10
+  var cfStr = cfStringCreateUTF8WithCString("Hello world!")
+  echo cfStr
+  release(cfStr)

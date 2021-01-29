@@ -5,6 +5,8 @@ author        = "Skynet Core"
 description   = "Nim bindings for Objective-C 2.0 runtime"
 license       = "MIT"
 srcDir        = "src"
+installExt    = @["nim"]
+bin           = @["core_foundation"]
 
 
 # Dependencies
